@@ -2,15 +2,15 @@
 
 <!-- headline two - formats font automatically so it looks appropriate -->
 <h2>
-Upload Your Funny Pet Image
+Share Your Travel Adventure
 </h2>
 
 <%= simple_form_for @post do |f| %>
 
 	<br/>
-	<%= f.input :title, label: 'Headline', placeholder: 'ex: Fattest Cat Ever' %>
+	<%= f.input :title, label: 'Headline', placeholder: 'ex: On Top of Mt. Fuji' %>
 	<br/>
-	<%= f.input :description, label: 'Caption', placeholder: 'ex: Sponsored by Friskies' %>
+	<%= f.input :description, label: 'Caption', placeholder: 'ex: What an amazing trip!' %>
 	<br/>
 	<%= f.input :image, label: 'Image' %>
 	<br/>
