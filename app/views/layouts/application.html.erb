@@ -22,15 +22,34 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="#">Vinster</a>
+
+      <!-- bootstrap does not require the <li> tags in this div class -->
+      <%= link_to 'Vinster', root_path, :class => 'navbar-brand' %>
+
+
+      <!-- <a class="navbar-brand" href="/">Vinster</a> --> <!-- old html code for Vinster link -->
     </div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->
+    
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
-        <!--  <li class="active"><a href="#">Link</a></li>
-        #<li><a href="#">Link</a></li>  -->
-    
+       
+        <!--
+        <li class="active"><a href="/posts">All Posts</a></li>
+        #<li><a href="/posts/new">Upload</a></li> 
+        -->
+
+        <!-- ruby code instead of html above -->
+        <li> <!-- required by twitter bootstrap -->
+        <%= link_to 'All Posts', posts_path %>
+        </li>
+
+        <li>
+        <%= link_to 'Upload', new_post_path %>
+        </li>
+
+
       </ul>
 
      
