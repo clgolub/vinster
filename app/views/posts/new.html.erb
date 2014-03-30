@@ -6,10 +6,14 @@ Upload Your Funny Pet Image
 </h2>
 
 <%= simple_form_for @post do |f| %>
+
 	<br/>
 	<%= f.input :title, label: 'Headline', placeholder: 'ex: Fattest Cat Ever' %>
 	<br/>
 	<%= f.input :description, label: 'Caption', placeholder: 'ex: Sponsored by Friskies' %>
 	<br/>
+	<%= f.input :image, label: 'Image' %>
+	<br/>
 	<%= f.button :submit, :class => 'btn btn-primary' %>
+
 <% end %> 

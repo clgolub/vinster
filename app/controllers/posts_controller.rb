@@ -25,7 +25,7 @@ class PostsController < ApplicationController
 	#defining the parameters of the post - only allowing users to input title and description
 	#i.e. so people cannot sneak in other hack commands - keeps it more secure
 	def post_params
-		params.require(:post).permit(:title, :description)
+		params.require(:post).permit(:title, :description, :image)
 	end
 
 end

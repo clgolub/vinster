@@ -38,6 +38,9 @@ gem 'bootstrap-sass', '~> 3.1.1'
 # used to create simple form on posts > new page
 gem 'simple_form'
 
+# used to help expedite dealing with uploading images
+gem 'carrierwave'
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.1.2'
 
