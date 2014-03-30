@@ -41,6 +41,12 @@ gem 'simple_form'
 # used to help expedite dealing with uploading images
 gem 'carrierwave'
 
+# used to securely house our AWS S3 login credentials secure when uploading to GitHub
+gem "figaro"
+
+# used to setup images with S3, from carrier wave gem
+gem "fog", "~> 1.3.1"
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.1.2'
 
